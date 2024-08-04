@@ -38,6 +38,7 @@
 
 /*Logo*/
 #logo {
+    display: none;
     width: 80px;
     position: absolute;
     left: 10%;
