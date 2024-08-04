@@ -2,7 +2,7 @@
 	/*
 	Plugin Name: SchmalPlayer
 	Description: Dieser Player spielt besonders schmale Audiofiles
-	Version: 1.8.15
+	Version: 1.9.1
 	Author: Yoshy
 	*/
 	
