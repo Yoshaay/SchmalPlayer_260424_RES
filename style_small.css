@@ -1,0 +1,137 @@
+/*Style für Laptop = KLEIN*/
+.icecast-component {
+    height: 100px;
+    width: 100%;
+    }
+
+:root {
+    /*--main-color: 86,127,205 oder 567fcd DAS IST DAS BLAU*/
+    --percentage: 30%;
+    --main-color: 184,184,184;
+    --bg-color: 0,0,0;
+}
+
+/*Play-Button*/
+#playpause {
+    background-color: white;
+    color: black;
+    padding: 10px 0px;
+    min-width: 7em;
+    /*text-align: center;*/
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 100px;
+    transition-duration: 0.7s;
+
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 22%;
+}
+
+/*Play-Button hovern*/
+#playpause:hover {
+    background-color: #B8B8B8;
+    color: white;   
+    border: 2px solid black;
+}
+
+/*Logo*/
+#logo {
+    width: 80px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 1%;
+}
+
+/*Titel-Anzeige*/
+#text {
+    background-color: white;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 60%;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #567fcd;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+/*Lautsprecher-Symbol*/
+#sound-picto {
+    /*margin-right: 1em;*/
+    display: none;
+    cursor: pointer;
+    
+    position: absolute;
+    right: 38.5%;
+    top: 28%;
+}
+
+#playSym {
+    margin: 0;
+}
+
+/*Lautstärke-Zahl*/
+#zahl {
+    display: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    min-width: 2em;
+    
+    position: absolute;
+    right: 21%;
+    top: 21%;
+}
+
+/* The slider itself */
+#volslider {
+    display: none;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    border-radius: 5px;
+    width: 12%; /* Full-width */
+    height: 12px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    
+    position: absolute;
+    left: 62.5%;
+    top: 30%;
+}
+
+/* Mouse-over effects */
+#volslider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+#volslider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: #ffffff; /* Blue background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#volslider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%; 
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
